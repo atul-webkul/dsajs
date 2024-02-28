@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		let data = [9, 45, 44, 11, 5, 58, 98, 65, 54, 15, 78, 95, 45]
+		for (let i = 0; i < data.length; i++) {
+			document.write(`Array ${i} =  ${data[i]}<br>`)
+		}
+		document.write(data[2]);
+
+		function getElement() {
+			let el = document.getElementById('element').value;
+			if (el < data.length) {
+				alert(data[el])
+			} else {
+				alert("enter valid value")
+			}
+
+		}
+
+
+	</script>
+</head>
+
+<body>
+	<input type="text" id="element"> <button onclick="getElement()">submit</button>
+</body>
+
+</html>
